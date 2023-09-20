@@ -17,6 +17,7 @@ class AVL():
             return val1
         return val2
     
+    #*Rotacion simple izquierda
     def srl(self, pivote:Nodo) -> Nodo:
         aux:Nodo = pivote.left
         pivote.left = aux.right
@@ -25,6 +26,7 @@ class AVL():
         aux.alturaN = self.max(self.getAltura(aux.left), pivote.alturaN) + 1
         return aux
     
+    #*Rotacion simple derecha
     def srr(self, pivote:Nodo) -> Nodo:
         aux:Nodo  = pivote.right
         pivote.right = aux.left
@@ -33,10 +35,12 @@ class AVL():
         aux.alturaN = self.max(self.getAltura(aux.right), pivote.alturaN) + 1
         return aux
     
+    #*Rotacion doble izquierda
     def drl(self, pivote:Nodo) -> Nodo:
         pivote.left = self.srr(pivote.left)
         return self.srl(pivote)
     
+    #*Rotacion doble derecha
     def drr(self, pivote:Nodo) -> Nodo:
         pivote.right = self.srl(pivote.right)
         return self.srr(pivote)
