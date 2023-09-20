@@ -1,0 +1,10 @@
+digraph G { 
+label="Avl Tree";
+rankdir=TB; 
+node [shape = record, color=blue ,style="rounded,filled", fillcolor=gray93];
+nodo7[label ="<C0>| 7 |<C1> "]; 
+nodo5[label ="5"]; 
+nodo7:C0->nodo5
+nodo10[label ="10"]; 
+nodo7:C1->nodo10
+} 
