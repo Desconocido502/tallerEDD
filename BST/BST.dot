@@ -1,0 +1,22 @@
+digraph G { 
+label="B Tree";
+rankdir=TB; 
+node [shape = record, color=blue ,style="rounded,filled", fillcolor=gray93];
+Node45[label ="<C0>| 45 |<C1> "]; 
+Node23[label ="<C0>| 23 |<C1> "]; 
+Node2[label ="<C0>| 2 |<C1> "]; 
+Node7[label ="7"]; 
+Node2:C1->Node7
+Node23:C0->Node2
+Node38[label ="38"]; 
+Node23:C1->Node38
+Node45:C0->Node23
+Node65[label ="<C0>| 65 |<C1> "]; 
+Node52[label ="<C0>| 52 |<C1> "]; 
+Node48[label ="48"]; 
+Node52:C0->Node48
+Node65:C0->Node52
+Node96[label ="96"]; 
+Node65:C1->Node96
+Node45:C1->Node65
+} 

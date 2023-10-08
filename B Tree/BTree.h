@@ -34,7 +34,7 @@ public:
 
     string DrawBTree(){
         generacionImg("ArbolB", root->toDot());
-        string command = "xdg-open ArbolB.png";
+        string command = "ArbolB.png";
         string x = to_string(system(command.c_str()));
         //cout<<"x:"<<x<<endl;
         return x;

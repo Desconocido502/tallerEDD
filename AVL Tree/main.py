@@ -6,5 +6,5 @@ if __name__ == "__main__":
     avl.agregar(5)
     avl.agregar(10)
     avl.agregar(7)
-    
+    avl.PreOrden()
     avl.graficar()
